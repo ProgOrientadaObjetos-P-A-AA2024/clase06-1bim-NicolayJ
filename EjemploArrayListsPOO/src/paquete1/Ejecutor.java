@@ -35,7 +35,6 @@ public class Ejecutor {
                     objetoCalificacion.obtenerNota(),
                     objetoCalificacion.obtenerProfesor().obtenerNombre());
         }
-        
     }
     
 }
