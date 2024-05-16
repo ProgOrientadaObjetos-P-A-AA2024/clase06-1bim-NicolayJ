@@ -51,4 +51,11 @@ public class Calificacion {
         return profesor;
     }
 
+    public String toString(){
+        String cadena = String.format("%s - %s - %.2f\n", 
+                obtenerProfesor().obtenerNombre(),
+                obtenerNombreMateria(),
+                obtenerNota());
+        return cadena;
+    }
 }

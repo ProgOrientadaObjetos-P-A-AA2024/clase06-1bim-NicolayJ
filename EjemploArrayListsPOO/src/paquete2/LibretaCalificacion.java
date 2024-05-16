@@ -33,7 +33,7 @@ public class LibretaCalificacion {
         double suma = 0;
         
         for (int i = 0; i < obtenerCalificaciones().size(); i++) {
-            suma = suma + obtenerCalificaciones().get(i).obtenerNota();
+            suma += obtenerCalificaciones().get(i).obtenerNota();
             
         }
         
