@@ -49,6 +49,9 @@ public class ManejoArrayList5 {
             System.out.printf("%s\n", profesores2.get(i));
             /*
             profesores2.get(i) es un objeto del tipo Profesor
+            .add() es para agregar valores a la lista
+            .get(i) es para saber la posicion i de la lista
+            .size() es para saber el tamanio del ArrayList
             */
         }
     }
