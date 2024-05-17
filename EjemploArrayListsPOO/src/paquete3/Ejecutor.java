@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Ejecutor {
+
     public static void main(String[] args) {
         Scanner tecla = new Scanner(System.in);
         ArrayList<Computador> listaComputadoras = new ArrayList<>();
@@ -28,7 +29,7 @@ public class Ejecutor {
             String marcaMemoria = tecla.nextLine();
             System.out.print("      Ingrese el costo de la memoria: ");
             double costoMemoria = tecla.nextDouble();
-            tecla.nextLine(); 
+            tecla.nextLine();
 
             System.out.print("-> Ingrese la marca del procesador: ");
             String marcaProcesador = tecla.nextLine();
@@ -40,7 +41,7 @@ public class Ejecutor {
                     costoMemoria);
 
             Procesador procesador = new Procesador(
-                    marcaProcesador, 
+                    marcaProcesador,
                     costoProcesador);
 
             Computador computador = new Computador(
@@ -56,6 +57,6 @@ public class Ejecutor {
         venta.establecerArrayList(listaComputadoras);
         venta.establecerValorVenta();
 
-        System.out.printf("%s\n",venta);
+        System.out.printf("%s\n", venta);
     }
 }

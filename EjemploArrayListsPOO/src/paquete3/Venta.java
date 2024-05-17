@@ -8,9 +8,11 @@ import java.util.ArrayList;
 
 /**
  * Clase que representa una Venta
+ *
  * @autor reroes
  */
 public class Venta {
+
     private double valorVenta;
     private ArrayList<Computador> computadoras;
 
@@ -36,7 +38,7 @@ public class Venta {
     public ArrayList<Computador> obtenerArrayList() {
         return computadoras;
     }
-    
+
     @Override
     public String toString() {
         String cadena = "\nREPORTE DE VENTAS\n";
@@ -49,9 +51,9 @@ public class Venta {
                     + "\n\tCosto Procesador: $ %.2f"
                     + "\n\tMarca Memoria: %s"
                     + "\n\tCosto Memoria: $ %.2f"
-                    + "\n\tCosto Final: $ %.2f\n\n", 
-                    cadena, 
-                    c.obtenerMarca(), 
+                    + "\n\tCosto Final: $ %.2f\n\n",
+                    cadena,
+                    c.obtenerMarca(),
                     c.obtenerProcesador().obtenerMarca(),
                     c.obtenerProcesador().obtenerCosto(),
                     c.obtenerMemoria().obtenerMarca(),
@@ -60,8 +62,8 @@ public class Venta {
         }
 
         cadena = String.format("%s-----------------------------------\n"
-                + "Valor Total de la Venta: $ %.2f\n", 
-                cadena, 
+                + "Valor Total de la Venta: $ %.2f\n",
+                cadena,
                 obtenerValorVenta());
         return cadena;
     }
