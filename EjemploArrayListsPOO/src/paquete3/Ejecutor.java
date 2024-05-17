@@ -12,7 +12,7 @@ public class Ejecutor {
         Scanner tecla = new Scanner(System.in);
         ArrayList<Computador> listaComputadoras = new ArrayList<>();
 
-        System.out.print("Cuantos computadores se desea vender?: ");
+        System.out.println("Cuantos computadores se desea vender? ");
         int numComputadores = tecla.nextInt();
 
         for (int i = 0; i < numComputadores; i++) {

@@ -39,11 +39,12 @@ public class Venta {
     
     @Override
     public String toString() {
-        String cadena = "\nReporte de Venta\n";
+        String cadena = "\nREPORTE DE VENTAS\n";
         cadena = String.format("%sLista de Computadoras:\n", cadena);
 
         for (Computador c : computadoras) {
-            cadena = String.format("%s\n\tMarca: %s"
+            cadena = String.format("%s\n"
+                    + "\tMarca: %s"
                     + "\n\tMarca Procesador: %s"
                     + "\n\tCosto Procesador: $ %.2f"
                     + "\n\tMarca Memoria: %s"
@@ -58,7 +59,8 @@ public class Venta {
                     c.obtenerCostoComputador());
         }
 
-        cadena = String.format("%sValor Total de la Venta: $ %.2f\n", 
+        cadena = String.format("%s-----------------------------------\n"
+                + "Valor Total de la Venta: $ %.2f\n", 
                 cadena, 
                 obtenerValorVenta());
         return cadena;
