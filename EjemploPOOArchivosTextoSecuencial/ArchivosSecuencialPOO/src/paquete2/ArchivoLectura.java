@@ -56,22 +56,33 @@ public class ArchivoLectura {
     // establecer valores de cada línea
     // en la lista de tipo Profesor
     public void establecerLista() {
-        lista = new ArrayList<>();
+    
+        lista = new ArrayList<>();  
+        // crea una lista en donde guarda la informacion del archivo para luego
+        // presentarlo
         File f = new File(rutaArchivo);
 
-        if (f.exists()) {
+        if (f.exists()) { // Mientras el archivo exista ingresa al if
 
             while (entrada.hasNext()) {
                 String linea = entrada.nextLine(); // Tara Hernandez;contratado
-
+                // Lee linea por linea
+                
                 ArrayList<String> linea_partes = new ArrayList<>(
                         Arrays.asList(linea.split(";")) // ["Tara Hernandez", "contratado"]
                 );
+                // Separa la linea cuando encuentra un ;
+                
                 Profesor p = new Profesor(linea_partes.get(0), // Tara Hernandez
                         linea_partes.get(1) // contratado
                 );
-                lista.add(p);
-
+                // Una vez separado lo que hace es al nombre ponerlo en
+                // linea_partes.get(0) el nombre y .get(1) el tipo 
+                
+                lista.add(p); 
+                // Una vez hecha la primera linea lo que hace es agregar la 
+                // informacion en lista que es un Array list
+                
             } // fin de while
         }
     }
