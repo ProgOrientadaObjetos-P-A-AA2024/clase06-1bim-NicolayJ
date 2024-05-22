@@ -80,6 +80,8 @@ public class ArchivoLectura {
 
                 ArrayList<String> cadenaProfesor = new ArrayList<>(
                         Arrays.asList(profesor.split("\\|")));
+                // El \\ es como un escape para poder separar un caracter que 
+                // sea diferente de ; y ,
                 // ["Tara Hernandez", "contratado"]
                 //        0                 1
 
